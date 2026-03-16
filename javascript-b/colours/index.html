@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milena Pires - 75632 - Colours Project</title>
 
-  <!-- Font Awesome library -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    /* Reset default spacing */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<title>Milena Pires - 75632 - Colours Project</title>
 
-    /* Centre the page content vertically and horizontally */
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    /* Main section that changes colour */
-    section {
-      width: 100%;
-      max-width: 700px;
-      min-height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      padding: 30px;
-      text-align: center;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      background-color: #ffffff;
-      transition: background-color 0.3s ease;
-    }
+<style>
 
-    /* Hex code display box */
-    #hexCode {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 18px 28px;
-      border: 2px solid #222;
-      border-radius: 12px;
-      min-width: 220px;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    /* Button styling */
-    button {
-      padding: 14px 24px;
-      border: none;
-      border-radius: 10px;
-      background-color: #222;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:#f4f4f4;
+}
 
-    /* Button hover effect */
-    button:hover {
-      background-color: #444;
-      transform: scale(1.05);
-    }
+section{
+width:600px;
+height:350px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:20px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+background:white;
+}
 
-    /* Space between icon and text */
-    button i {
-      margin-right: 8px;
-    }
-  </style>
+#hexCode{
+padding:15px 25px;
+border:2px solid #000;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
+background:white;
+}
+
+button{
+padding:12px 22px;
+border:none;
+border-radius:8px;
+background:#222;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#444;
+}
+
+button i{
+margin-right:8px;
+}
+
+</style>
+
 </head>
+
 <body>
-  <section id="colourSection">
-    <div id="hexCode">#FFFFFF</div>
 
-    <button id="changeColourBtn">
-      <i class="fa-solid fa-palette"></i>
-      Change Colour
-    </button>
-  </section>
+<section id="colourSection">
 
-  <script>
-    // Generate random number in range from 0 to max-1
-    function getRandomNumber(max) {
-      return Math.floor(Math.random() * max);
-    }
+<div id="hexCode">#FFFFFF</div>
 
-    // Store valid hex characters in an array
-    const hexCharacters = [
-      "0", "1", "2", "3", "4", "5", "6", "7",
-      "8", "9", "A", "B", "C", "D", "E", "F"
-    ];
+<button id="changeColourBtn">
+<i class="fa-solid fa-palette"></i>
+Change Colour
+</button>
 
-    // Select the elements from the page
-    const colourSection = document.getElementById("colourSection");
-    const hexCodeDisplay = document.getElementById("hexCode");
-    const changeColourBtn = document.getElementById("changeColourBtn");
+</section>
 
-    // Change colour when the button is clicked
-    changeColourBtn.addEventListener("click", () => {
-      let hexCode = "#";
+<script>
 
-      // Build the six-character hex code one character at a time
-      for (let i = 0; i < 6; i++) {
-        const randomIndex = getRandomNumber(hexCharacters.length);
-        hexCode += hexCharacters[randomIndex];
-      }
+function getRandomNumber(max){
+return Math.floor(Math.random()*max);
+}
 
-      // Apply the new colour to the section
-      colourSection.style.backgroundColor = hexCode;
+const hexCharacters=[
+"0","1","2","3","4","5","6","7",
+"8","9","A","B","C","D","E","F"
+];
 
-      // Display the current hex code
-      hexCodeDisplay.textContent = hexCode;
-    });
-  </script>
+const colourSection=document.getElementById("colourSection");
+const hexCodeDisplay=document.getElementById("hexCode");
+const changeColourBtn=document.getElementById("changeColourBtn");
+
+changeColourBtn.addEventListener("click",()=>{
+
+let hexCode="#";
+
+for(let i=0;i<6;i++){
+
+const randomIndex=getRandomNumber(hexCharacters.length);
+
+hexCode+=hexCharacters[randomIndex];
+
+}
+
+colourSection.style.backgroundColor=hexCode;
+
+hexCodeDisplay.textContent=hexCode;
+
+});
+
+</script>
+
 </body>
 </html>
