@@ -1,130 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milena Pires - 75632 - Colours Project</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milena Pires | Student ID 75632 | Web Designer and Developer</title>
+    <meta name="description" content="I create digital experiences to promote products, services, and events.">
 
-  <!-- Font Awesome library -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+	<!-- Preload large image -->
 
-  <style>
-    /* Reset default spacing */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-    /* Centre the page content vertically and horizontally */
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
 
-    /* Main section that changes colour */
-    section {
-      width: 100%;
-      max-width: 700px;
-      min-height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      padding: 30px;
-      text-align: center;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      background-color: #ffffff;
-      transition: background-color 0.3s ease;
-    }
 
-    /* Hex code display box */
-    #hexCode {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 18px 28px;
-      border: 2px solid #222;
-      border-radius: 12px;
-      min-width: 220px;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    /* Button styling */
-    button {
-      padding: 14px 24px;
-      border: none;
-      border-radius: 10px;
-      background-color: #222;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
 
-    /* Button hover effect */
-    button:hover {
-      background-color: #444;
-      transform: scale(1.05);
-    }
 
-    /* Space between icon and text */
-    button i {
-      margin-right: 8px;
-    }
-  </style>
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script type="text/javascript">
+	    (function() {
+	    window.__insp = window.__insp || [];
+	    __insp.push(['wid', 1656824761]);
+	    var ldinsp = function(){
+	    if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1656824761&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+	    setTimeout(ldinsp, 0);
+	    })();
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico">
+
 </head>
+
+
+
+
+
+
 <body>
-  <section id="colourSection">
-    <div id="hexCode">#FFFFFF</div>
 
-    <button id="changeColourBtn">
-      <i class="fa-solid fa-palette"></i>
-      Change Colour
-    </button>
-  </section>
+    <!-- menu and 'hero block' header -->
+    <nav class="theme-dark"><div class="container-menu">
+        <a href="#" class="brand">
+            <img src="assets/img/logo.png" alt="Sample website logo">
+        </a>
+    
+        <div class="container-menu-links">
+    
+            <div class="nav-toggle" id="nav-toggle-btn">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+    
+            <ul class="links-wrapper">
+                <li><a href="#">Home</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="store/index.html">Store</a></li>
+                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div></div></nav>
+    
+<!-- header starts here -->
+    
+        <header class="theme-dark cols-2-half text-center-mobile">
 
-  <script>
-    // Generate random number in range from 0 to max-1
-    function getRandomNumber(max) {
-      return Math.floor(Math.random() * max);
-    }
 
-    // Store valid hex characters in an array
-    const hexCharacters = [
-      "0", "1", "2", "3", "4", "5", "6", "7",
-      "8", "9", "A", "B", "C", "D", "E", "F"
-    ];
+    
+            <div class="col-2 col-text">
+                <div class="badge">FRONT-END STUDENT</div>
+                <h1>Milena Pires</h1>
+                <h2>💻 I’m currently studying Computer Science at Dorset College, Dublin. 🔧 Passionate about hardware 🎮Big fan of FPS games
+</h2>
+    
+                <div class="container-btn">
+                    <a href="portfolio/index.html" class="btn btn-solid btn-soft"><span>View my work</span><i class="fa-regular fa-folder-open"></i></a><a href="contact/index.html" class="btn btn-outline btn-soft"><span>Get in touch</span><i class="fa-regular fa-envelope"></i></a>
+                </div>
+    
+            </div>
+    
+            <div class="col-2 col-visual">
+                <figure>
+                    <img src="assets/img/dev.jpg" alt="Placeholder image">
+                </figure>
+            </div>
+    
+        </header>
+    
+    
+        <!-- header ends here -->
+    
+    <!-- main content with sections -->
+    <main>
 
-    // Select the elements from the page
-    const colourSection = document.getElementById("colourSection");
-    const hexCodeDisplay = document.getElementById("hexCode");
-    const changeColourBtn = document.getElementById("changeColourBtn");
+	<!-- section starts here -->
 
-    // Change colour when the button is clicked
-    changeColourBtn.addEventListener("click", () => {
-      let hexCode = "#";
+    <section class="theme-dark section-selector-1 w-1356px">
 
-      // Build the six-character hex code one character at a time
-      for (let i = 0; i < 6; i++) {
-        const randomIndex = getRandomNumber(hexCharacters.length);
-        hexCode += hexCharacters[randomIndex];
-      }
+		<div class="col-1 text-center w-820px">
+			<h2 class="projects-title">Recent Projects</h2>
+            <h3 class="projects-description">
+            Below you can see some examples of my recent work. Check out my complete portfolio of 
+            <a href="portfolio/index.html">web design</a> projects.
+            Have a project you would like to discuss?
+            <a href="contact/index.html">Let's make something great together!</a>
+            </h3>
 
-      // Apply the new colour to the section
-      colourSection.style.backgroundColor = hexCode;
+		</div>
 
-      // Display the current hex code
-      hexCodeDisplay.textContent = hexCode;
-    });
-  </script>
+		<!-- Begin three-column flexbox grid -->
+		<div class="flex-cols-3 cols-gap-4">
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="portfolio/fashion/index.html"><img src="assets/img/project-fashion.jpg" alt="Fashion retailer project"></a>
+				</figure>
+				<h3>Snazzy Fashion</h3>
+				<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+				<a href="portfolio/fashion/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+			
+
+            <div class="col-3">
+            <figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+            <a href="store/index.html"><img src="assets/img/project-store.png" alt="Store project"></a>
+            </figure>
+
+            <h3>Book Store</h3>
+            <p>An online book store with affiliate links to Amazon.</p>
+            <a href="store/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="portfolio/crypto-wallet/index.html"><img src="assets/img/project-crypto-wallet.jpg" alt="Placeholder image"></a>
+				</figure>
+				<h3>Crypto Wallet</h3>
+				<p> A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+				<a href="portfolio/crypto-wallet/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+
+		</div>
+		<!-- End three-column flexbox grid -->
+
+	</section>
+
+	<!-- section ends here -->
+
+    </main>
+
+    <!-- footer -->
+ 
+	<footer class="theme-dark text-center-desktop text-center-mobile">
+
+		<h2>Milena Pires</h2>
+
+		<h3>Front-end designer and developer in training</h3>
+
+		<ul class="footer-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="portfolio/index.html">Portfolio</a></li>
+			<li><a href="store/index.html">Store</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/Milenalp07" target="_blank"><i class="fab fa-github-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
+
+	</footer>
+
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+
 </body>
 </html>
