@@ -6,9 +6,44 @@
   <title>Milena Pires - 75632 - Colours Project</title>
 </head>
 <body>
-  <section>
-    <div>#FFFFFF</div>
-    <button>Change Colour</button>
+  <section id="colourSection">
+    <div id="hexCode">#FFFFFF</div>
+    <button id="changeColourBtn">Change Colour</button>
   </section>
+
+  <script>
+    // Generate random number in range from 0 to max-1
+    function getRandomNumber(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    // Array with all valid hex characters
+    const hexCharacters = [
+      "0", "1", "2", "3", "4", "5", "6", "7",
+      "8", "9", "A", "B", "C", "D", "E", "F"
+    ];
+
+    // Select page elements
+    const colourSection = document.getElementById("colourSection");
+    const hexCodeDisplay = document.getElementById("hexCode");
+    const changeColourBtn = document.getElementById("changeColourBtn");
+
+    // Add click event to the button
+    changeColourBtn.addEventListener("click", () => {
+      let hexCode = "#";
+
+      // Build the 6-character hex code
+      for (let i = 0; i < 6; i++) {
+        const randomIndex = getRandomNumber(hexCharacters.length);
+        hexCode += hexCharacters[randomIndex];
+      }
+
+      // Change section background colour
+      colourSection.style.backgroundColor = hexCode;
+
+      // Show current hex code on screen
+      hexCodeDisplay.textContent = hexCode;
+    });
+  </script>
 </body>
 </html>
